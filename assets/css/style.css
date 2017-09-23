@@ -1,0 +1,236 @@
+body {
+    background-image: url("../images/concrete-texture.png");
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    z-index: 0;
+}
+
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    line-height: 25px;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-size: 1.5em;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+hr {
+    border-top: 2px solid #ccc;
+    margin: 15px 0 25px 0;
+}
+
+img {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    float: left;
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    margin-top: 0;
+    z-index: 10;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main {
+    width: 600px;
+    float: left;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 200px;
+    top: 130px;
+    left: 0;
+    padding: 25px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar {
+    width: 220px;
+    float: left;
+    background-color: #fff;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    padding: 25px;
+    border: 1px solid #ddd;
+    /* This thing is the drop shadow blur effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name {
+    position: fixed;
+    width: 250px;
+    height: 75px;
+    top: 25px;
+    background: #4aaaa5;
+    z-index: 12;
+}
+
+.title {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5em;
+    font-size: 2em;
+}
+
+.nav {
+    float: right;
+    position: fixed;
+    width: 350px;
+    height: 50px;
+    top: 35px;
+    right: 290px;
+    z-index: 13;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 0 10px 0 10px;
+}
+
+
+/* this adds a pipe to the left of every list item that has a list item after it. ie. will not add a pipe to the end */
+
+li+li {
+    border-left: 1px solid #777
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    color: #777;
+    text-decoration: none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a:hover {
+    background-color: #4aaaa5;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #666;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    clear: both;
+    border-top: 5px solid #4aaaa5;
+    text-align: center;
+}
+
+.footer p {
+    color: #ccc;
+    line-height: 50px;
+}
+
+
+/* CONTACT FORM CSS */
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1em;
+}
+
+
+/* hover color for submit button */
+
+input[type=submit]:hover {
+    background-color: #316d69;
+}
+
+
+/* text style for form input titles */
+
+label {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    line-height: 25px;
+}
+
+
+/* PORTFOLIO CSS */
+
+.folio {
+    width: 275px;
+    float: left;
+    position: relative;
+}
+
+.folio img {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* this changes the margin for ever other portfolio block so its justified on both sides */
+
+.folio:nth-child(odd) {
+    margin: 0 48px 30px 0;
+}
+
+.folio:nth-child(even) {
+    margin: 0 0 30px 0;
+}
+
+.banner {
+    position: absolute;
+    width: 275px;
+    height: 50px;
+    background-color: #4aaaa5;
+    bottom: 15px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    line-height: 3em;
+}
